@@ -1143,7 +1143,7 @@ body select#election_id:focus {
   z-index: 1 !important; /* Ensures content sits above background layer */
   
   width: 90% !important; /* Responsive width */
-  max-width: 58em !important; /* Caps width for readability */
+  max-width: 90% !important; /* Caps width for readability */
   
   margin: 0 auto 1.25em auto !important; /* Centered with bottom spacing */
   
@@ -1151,6 +1151,9 @@ body select#election_id:focus {
   border: none !important; /* No border */
   box-shadow: none !important; /* No shadow */
   padding: 0 !important; /* Removes inner spacing */
+
+  overflow-y: auto !important;   /* Enables vertical scrolling if content overflows */
+  overflow-x: hidden !important; /* Prevents horizontal scrolling */
 }
 
 /* Background box behind image + text */
@@ -1194,7 +1197,7 @@ body select#election_id:focus {
 /* Person image specifically inside a person description window */
 .person_description_window .person_image {
     float: left; /* Aligns image to left side */
-    margin: 2em 0 0 2%; /* Pushes image down and shifts left */
+    margin: 2em 0 0 2em; /* Pushes image down and shifts left */
     border: double; /* Double border style */
     border-color: var(--border-color); /* Uses CSS variable for border color */
 }
