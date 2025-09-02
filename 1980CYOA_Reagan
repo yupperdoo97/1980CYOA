@@ -53,153 +53,58 @@ campaignTrail_temp.multiple_endings=true
 //aa = all final overall results data
 //quickstats = relevant data on candidate performance (format: your candidate's electoral vote count, your candidate's popular vote share, your candidate's raw vote total)
 ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1]
-if (
-  quickstats[0] < 270 &&
-  quickstats[1] < 270 &&
-  (ans == 2157 || ans == 2158 || ans == 2159 || ans == 2160) &&
-  (campaignTrail_temp.player_answers.includes(2021) || campaignTrail_temp.player_answers.includes(2022) || campaignTrail_temp.player_answers.includes(2023) || campaignTrail_temp.player_answers.includes(2024))
-) {
-  // Reagan no majority
-  if (used != true) {
-    setInterval(function () {
-      used = true;
-      imgg = document.getElementsByClassName("person_image")[0];
-      if (imgg != null) {
-        imgg.src = "https://imgur.com/cAYorfp.jpg"; // Reagan
-      }
-    }, 100);
-  }
-  return "<h3>Wow! No candidate has won a majority.</h3><p>Neither you nor President Carter has secured the 270 electoral votes needed to win outright...</p>";
-} else if (
-  quickstats[0] > 270 &&
-  (ans == 2157 || ans == 2158 || ans == 2159 || ans == 2160) &&
-  (campaignTrail_temp.player_answers.includes(2021) || campaignTrail_temp.player_answers.includes(2022) || campaignTrail_temp.player_answers.includes(2023) || campaignTrail_temp.player_answers.includes(2024))
-) {
-  // Reagan win
-  if (used != true) {
-    setInterval(function () {
-      used = true;
-      imgg = document.getElementsByClassName("person_image")[0];
-      if (imgg != null) {
-        imgg.src = "https://imgur.com/cAYorfp.jpg"; // Reagan
-      }
-    }, 100);
-  }
-  return "<h3>Congratulations! You have won the 1980 election!</h3><p>After a hard-fought campaign...</p>";
-} else if (
-  quickstats[1] > 270 &&
-  (ans == 2157 || ans == 2158 || ans == 2159 || ans == 2160) &&
-  (campaignTrail_temp.player_answers.includes(2021) || campaignTrail_temp.player_answers.includes(2022) || campaignTrail_temp.player_answers.includes(2023) || campaignTrail_temp.player_answers.includes(2024))
-) {
-  // Reagan loss
-  if (used != true) {
-    setInterval(function () {
-      used = true;
-      imgg = document.getElementsByClassName("person_image")[0];
-      if (imgg != null) {
-        imgg.src = "https://imgur.com/cAYorfp.jpg"; // Reagan
-      }
-    }, 100);
-  }
-  return "<h3>Sorry! You have lost the 1980 election.</h3><p>The voters have decided...</p>";
-} else if (
-  quickstats[0] < 270 &&
-  quickstats[1] < 270 &&
-  (ans == 2357 || ans == 2358 || ans == 2359 || ans == 2360) &&
-  (campaignTrail_temp.player_answers.includes(2221) || campaignTrail_temp.player_answers.includes(2222) || campaignTrail_temp.player_answers.includes(2223) || campaignTrail_temp.player_answers.includes(2224) || campaignTrail_temp.player_answers.includes(2621) || campaignTrail_temp.player_answers.includes(2622) || campaignTrail_temp.player_answers.includes(2623) || campaignTrail_temp.player_answers.includes(2624))
-) {
-  // Bush no majority
-  if (used != true) {
-    setInterval(function () {
-      used = true;
-      imgg = document.getElementsByClassName("person_image")[0];
-      if (imgg != null) {
-        imgg.src = "https://imgur.com/ARXjoYK.png"; // Bush
-      }
-    }, 100);
-  }
-  return "<h3>Wow! No candidate has won a majority.</h3><p>Neither you nor President Carter has reached 270 electoral votes...</p>";
-} else if (
-  quickstats[0] > 270 &&
-  (ans == 2357 || ans == 2358 || ans == 2359 || ans == 2360) &&
-  (campaignTrail_temp.player_answers.includes(2221) || campaignTrail_temp.player_answers.includes(2222) || campaignTrail_temp.player_answers.includes(2223) || campaignTrail_temp.player_answers.includes(2224) || campaignTrail_temp.player_answers.includes(2621) || campaignTrail_temp.player_answers.includes(2622) || campaignTrail_temp.player_answers.includes(2623) || campaignTrail_temp.player_answers.includes(2624))
-) {
-  // Bush win
-  if (used != true) {
-    setInterval(function () {
-      used = true;
-      imgg = document.getElementsByClassName("person_image")[0];
-      if (imgg != null) {
-        imgg.src = "https://imgur.com/ARXjoYK.png"; // Bush
-      }
-    }, 100);
-  }
-  return "<h3>Congratulations! You have won the 1980 election!</h3><p>Despite Jesse Helms’ conservative third-party run...</p>";
-} else if (
-  quickstats[1] > 270 &&
-  (ans == 2357 || ans == 2358 || ans == 2359 || ans == 2360) &&
-  (campaignTrail_temp.player_answers.includes(2221) || campaignTrail_temp.player_answers.includes(2222) || campaignTrail_temp.player_answers.includes(2223) || campaignTrail_temp.player_answers.includes(2224) || campaignTrail_temp.player_answers.includes(2621) || campaignTrail_temp.player_answers.includes(2622) || campaignTrail_temp.player_answers.includes(2623) || campaignTrail_temp.player_answers.includes(2624))
-) {
-  // Bush loss
-  if (used != true) {
-    setInterval(function () {
-      used = true;
-      imgg = document.getElementsByClassName("person_image")[0];
-      if (imgg != null) {
-        imgg.src = "https://imgur.com/ARXjoYK.png"; // Bush
-      }
-    }, 100);
-  }
-  return "<h3>Sorry! You have lost the 1980 election.</h3><p>Despite President Carter’s political troubles...</p>";
-} else if (
-  quickstats[0] < 270 &&
-  quickstats[1] < 270 &&
-  (ans == 2357 || ans == 2358 || ans == 2359 || ans == 2360) &&
-  (campaignTrail_temp.player_answers.includes(2421) || campaignTrail_temp.player_answers.includes(2422) || campaignTrail_temp.player_answers.includes(2423) || campaignTrail_temp.player_answers.includes(2424))
-) {
-  // Anderson no majority
-  if (used != true) {
-    setInterval(function () {
-      used = true;
-      imgg = document.getElementsByClassName("person_image")[0];
-      if (imgg != null) {
-        imgg.src = "https://imgur.com/I4zinOv.png"; // Anderson
-      }
-    }, 100);
-  }
-  return "<h3>Wow! No candidate has won a majority.</h3><p>No one has secured the 270 electoral votes...</p>";
-} else if (
-  quickstats[0] > 270 &&
-  (ans == 2357 || ans == 2358 || ans == 2359 || ans == 2360) &&
-  (campaignTrail_temp.player_answers.includes(2421) || campaignTrail_temp.player_answers.includes(2422) || campaignTrail_temp.player_answers.includes(2423) || campaignTrail_temp.player_answers.includes(2424))
-) {
-  // Anderson win
-  if (used != true) {
-    setInterval(function () {
-      used = true;
-      imgg = document.getElementsByClassName("person_image")[0];
-      if (imgg != null) {
-        imgg.src = "https://imgur.com/I4zinOv.png"; // Anderson
-      }
-    }, 100);
-  }
-  return "<h3>Congratulations! You have won the 1980 election!</h3><p>Your unorthodox campaign has delivered a Republican victory...</p>";
-} else if (
-  quickstats[1] > 270 &&
-  (ans == 2357 || ans == 2358 || ans == 2359 || ans == 2360) &&
-  (campaignTrail_temp.player_answers.includes(2421) || campaignTrail_temp.player_answers.includes(2422) || campaignTrail_temp.player_answers.includes(2423) || campaignTrail_temp.player_answers.includes(2424))
-) {
-  // Anderson loss
-  if (used != true) {
-    setInterval(function () {
-      used = true;
-      imgg = document.getElementsByClassName("person_image")[0];
-      if (imgg != null) {
-        imgg.src = "https://imgur.com/I4zinOv.png"; // Anderson
-      }
-    }, 100);
-  }
-  return "<h3>Sorry! You have lost the 1980 election.</h3><p>Despite running one of the most unconventional Republican campaigns...</p>";
+// ===================== REAGAN =====================
+if ((quickstats[0] > 270) && (campaignTrail_temp.player_answers[0] == 2157 || campaignTrail_temp.player_answers[0] == 2158 || campaignTrail_temp.player_answers[0] == 2159 || campaignTrail_temp.player_answers[0] == 2160) && (campaignTrail_temp.player_answers.includes(2021) || campaignTrail_temp.player_answers.includes(2022) || campaignTrail_temp.player_answers.includes(2023) || campaignTrail_temp.player_answers.includes(2024))) {
+  // Reagan WIN
+  let imgg = document.getElementsByClassName("person_image")[0];
+  if (imgg) imgg.src = "https://imgur.com/cAYorfp.jpg";
+  return "<h3>Congratulations! You have won the 1980 election!</h3><p>After a hard-fought campaign, you have taken back the White House for the Republican Party in a decisive win. Your victory has brought strong results down-ballot, with Republicans gaining control of the Senate for the first time since Eisenhower’s first term. Many doubted that a clear conservative platform could win nationally, but voters have turned to you after years of economic stagnation, high inflation, and foreign policy setbacks. It may be difficult to believe, but your promise to restore strength and confidence has carried the day.</p><p>The work ahead will be difficult. The Iran Hostage Crisis is nearing resolution, but inflation, high interest rates, and unemployment remain serious problems. Your plans for tax cuts, deregulation, and a stronger defense will be tested quickly. If you succeed, you may reshape the political landscape for years to come. If you stumble, Democrats will be hungry for revenge. For now, the presidency is yours. Good luck, Mr. President.</p>";
+} else if ((quickstats[1] > 270 && quickstats[0] < 270) && (campaignTrail_temp.player_answers[0] == 2157 || campaignTrail_temp.player_answers[0] == 2158 || campaignTrail_temp.player_answers[0] == 2159 || campaignTrail_temp.player_answers[0] == 2160) && (campaignTrail_temp.player_answers.includes(2021) || campaignTrail_temp.player_answers.includes(2022) || campaignTrail_temp.player_answers.includes(2023) || campaignTrail_temp.player_answers.includes(2024))) {
+  // Reagan LOSS
+  let imgg = document.getElementsByClassName("person_image")[0];
+  if (imgg) imgg.src = "https://imgur.com/cAYorfp.jpg";
+  return "<h3>Sorry! You have lost the 1980 election.</h3><p>The voters have decided, and you have fallen short. Many in your party believed Carter’s weak economy and foreign policy problems made this race yours to lose. Your defeat has sparked debate inside the GOP. Conservatives argue that the country missed a chance for bold change, while moderates say your campaign turned off swing voters with a platform they viewed as too rigid. Your loss leaves the party uncertain about its direction heading into the next election cycle.</p><p>Given your age and the tough nature of this race, your prospects for another national run are unclear. You could return to California politics, or perhaps wait for a Senate opportunity if S.I. Hayakawa retires. For now, President Carter will continue to face high inflation, energy troubles, and an unsettled world. The Iran Hostage Crisis may soon end, but the challenges for the United States will continue well into the new decade.</p>";
+} else if ((quickstats[0] < 270 && quickstats[1] < 270) && (campaignTrail_temp.player_answers[0] == 2157 || campaignTrail_temp.player_answers[0] == 2158 || campaignTrail_temp.player_answers[0] == 2159 || campaignTrail_temp.player_answers[0] == 2160) && (campaignTrail_temp.player_answers.includes(2021) || campaignTrail_temp.player_answers.includes(2022) || campaignTrail_temp.player_answers.includes(2023) || campaignTrail_temp.player_answers.includes(2024))) {
+  // Reagan NO-MAJORITY
+  let imgg = document.getElementsByClassName("person_image")[0];
+  if (imgg) imgg.src = "https://imgur.com/cAYorfp.jpg";
+  return "<h3>Wow! No candidate has won a majority.</h3><p>Neither you nor President Carter has secured the 270 electoral votes needed to win outright. This is the first time this has occurred since the election of 1824. Democrats still control a majority of the state congressional delegations, but many members are unhappy with Carter’s record. Some moderate Republicans may also look toward John Anderson rather than you. You’ll need to choose whether to lock in conservative support across party lines, or try to win over more moderate Democrats and independents, and that will mean making some political deals.</p><p>If you win, you’ll take office at a time of deep economic trouble. Stagflation remains unsolved, and public frustration with the government is at an all-time high. The Iran Hostage Crisis may soon end, but the sense of national malaise will not disappear overnight. If you lose, President Carter will continue to bear the responsibility for fixing these problems. All eyes are on you, Governor Reagan, as you decide your next move.</p>";
+}
+
+// ===================== BUSH =====================
+else if ((quickstats[0] > 270) && (campaignTrail_temp.player_answers[0] == 2357 || campaignTrail_temp.player_answers[0] == 2358 || campaignTrail_temp.player_answers[0] == 2359 || campaignTrail_temp.player_answers[0] == 2360) && (campaignTrail_temp.player_answers.includes(2221) || campaignTrail_temp.player_answers.includes(2222) || campaignTrail_temp.player_answers.includes(2223) || campaignTrail_temp.player_answers.includes(2224) || campaignTrail_temp.player_answers.includes(2621) || campaignTrail_temp.player_answers.includes(2622) || campaignTrail_temp.player_answers.includes(2623) || campaignTrail_temp.player_answers.includes(2624))) {
+  // Bush WIN
+  let imgg = document.getElementsByClassName("person_image")[0];
+  if (imgg) imgg.src = "https://imgur.com/ARXjoYK.png";
+  return "<h3>Congratulations! You have won the 1980 election!</h3><p>Despite Jesse Helms’ conservative third-party run peeling away votes on the right, you have won the presidency - and decisively at that. Your coalition of moderates, independents, and suburban Republicans was strong enough to withstand the split on the right, and your victory has brought with it a narrow Republican majority in the Senate for the first time since the early days of Ike. You enter office as a unifier by necessity, with both wings of the party watching closely to see how you govern.</p><p>The economic crisis remains unsolved. Inflation, high interest rates, and slow growth will demand decisive action, and the ongoing foreign policy challenges - from the hostage standoff in Tehran to the Soviet presence in Afghanistan - will test your judgment. Repairing the rift with the Helms camp will be just as important as appealing to Democrats if you hope to pass legislation and keep the party together for the midterms. The real work starts now, Mr. President. Good luck.</p>";
+} else if ((quickstats[1] > 270 && quickstats[0] < 270) && (campaignTrail_temp.player_answers[0] == 2357 || campaignTrail_temp.player_answers[0] == 2358 || campaignTrail_temp.player_answers[0] == 2359 || campaignTrail_temp.player_answers[0] == 2360) && (campaignTrail_temp.player_answers.includes(2221) || campaignTrail_temp.player_answers.includes(2222) || campaignTrail_temp.player_answers.includes(2223) || campaignTrail_temp.player_answers.includes(2224) || campaignTrail_temp.player_answers.includes(2621) || campaignTrail_temp.player_answers.includes(2622) || campaignTrail_temp.player_answers.includes(2623) || campaignTrail_temp.player_answers.includes(2624))) {
+  // Bush LOSS
+  let imgg = document.getElementsByClassName("person_image")[0];
+  if (imgg) imgg.src = "https://imgur.com/ARXjoYK.png";
+  return "<h3>Sorry! You have lost the 1980 election.</h3><p>Despite President Carter’s political troubles, you have come up short. Jesse Helms’ conservative third-party campaign split the Republican vote and cost you key states in the South and West. Many Republicans are already arguing that nominating a moderate like you was a mistake, saying it drove the party’s right wing into open revolt. Others insist that Helms’ splinter candidacy doomed any nominee from the start. Either way, the post-election finger-pointing has begun, and the GOP is entering a period of deep division.</p><p>At 56, your political career is far from over, but the path forward is uncertain. You may remain a prominent figure in Republican politics or return to a leading role in foreign policy circles. Some political junkies are even whispering of a Senate rematch against Lloyd Bentsen. For now, President Carter will continue to face a weak economy, high inflation, and a tense international climate. The question for Republicans is whether their future lies with your brand of moderation or with Reagan’s movement conservatism.</p>";
+} else if ((quickstats[0] < 270 && quickstats[1] < 270) && (campaignTrail_temp.player_answers[0] == 2357 || campaignTrail_temp.player_answers[0] == 2358 || campaignTrail_temp.player_answers[0] == 2359 || campaignTrail_temp.player_answers[0] == 2360) && (campaignTrail_temp.player_answers.includes(2221) || campaignTrail_temp.player_answers.includes(2222) || campaignTrail_temp.player_answers.includes(2223) || campaignTrail_temp.player_answers.includes(2224) || campaignTrail_temp.player_answers.includes(2621) || campaignTrail_temp.player_answers.includes(2622) || campaignTrail_temp.player_answers.includes(2623) || campaignTrail_temp.player_answers.includes(2624))) {
+  // Bush NO-MAJORITY
+  let imgg = document.getElementsByClassName("person_image")[0];
+  if (imgg) imgg.src = "https://imgur.com/ARXjoYK.png";
+  return "<h3>Wow! No candidate has won a majority.</h3><p>Neither you nor President Carter has reached 270 electoral votes. The last time the country faced this kind of deadlock was in 1824. Democrats control more state delegations in the House, but Carter’s economic record and foreign policy troubles have left some members uneasy about giving him another term. Your own position is complicated by Jesse Helms’ independent conservative campaign, which drew Republican votes in the South and West and left parts of your base deeply skeptical of your candidacy. Now you must decide whether to strike a deal with Helms’ supporters to secure conservative backing or court disaffected Democrats and independents in the House vote.</p><p>If you win, the problems will be immediate. Stagflation continues to strain families and businesses, and the Iran Hostage Crisis, while possibly nearing resolution, has damaged public trust in Washington. On top of governing the country, you will face the challenge of mending divisions within your party before the boil over. Good luck, Mr. Bush.</p>";
+}
+
+// ===================== ANDERSON =====================
+else if ((quickstats[0] > 270) && (campaignTrail_temp.player_answers[0] == 2357 || campaignTrail_temp.player_answers[0] == 2358 || campaignTrail_temp.player_answers[0] == 2359 || campaignTrail_temp.player_answers[0] == 2360) && (campaignTrail_temp.player_answers.includes(2421) || campaignTrail_temp.player_answers.includes(2422) || campaignTrail_temp.player_answers.includes(2423) || campaignTrail_temp.player_answers.includes(2424))) {
+  // Anderson WIN
+  let imgg = document.getElementsByClassName("person_image")[0];
+  if (imgg) imgg.src = "https://imgur.com/I4zinOv.png";
+  return "<h3>Congratulations! You have won the 1980 election!</h3><p>Your unorthodox campaign has delivered a Republican victory built on a coalition of moderates, independents, and reform-minded conservatives. Your decisive win also helped Republicans gain a narrow Senate majority for the first time since the early days of Eisenhower. Your presidency will test whether this approach can govern effectively or whether it will remain an exception in party history.</p><p>From day one, you’ll face deep economic problems - inflation, high interest rates, and weak growth - as well as tense foreign policy challenges, including the hostage crisis in Iran and the Soviet occupation of Afghanistan. Your bipartisan image may give you a unique opening to work across the aisle, but keeping your party’s right wing on board will be a constant balancing act. The next four years will determine if this is the start of a new Republican direction or just a brief departure from the norm. Good luck, Mr. President.</p>";
+} else if ((quickstats[1] > 270 && quickstats[0] < 270) && (campaignTrail_temp.player_answers[0] == 2357 || campaignTrail_temp.player_answers[0] == 2358 || campaignTrail_temp.player_answers[0] == 2359 || campaignTrail_temp.player_answers[0] == 2360) && (campaignTrail_temp.player_answers.includes(2421) || campaignTrail_temp.player_answers.includes(2422) || campaignTrail_temp.player_answers.includes(2423) || campaignTrail_temp.player_answers.includes(2424))) {
+  // Anderson LOSS
+  let imgg = document.getElementsByClassName("person_image")[0];
+  if (imgg) imgg.src = "https://imgur.com/I4zinOv.png";
+  return "<h3>Sorry! You have lost the 1980 election.</h3><p>Despite running one of the most unconventional Republican campaigns in decades, you fell short when push came to shove. Your emphasis on moderation and reform attracted some independents and crossover Democrats, but it also left many parts of the Republican base unmoved, and some even went into open revolt. Many conservatives will view your candidacy as a failed experiment, while others will argue it pointed toward a more inclusive GOP. The party is left debating its identity in the aftermath.</p><p>At 58, you still have the chance to influence national politics, whether inside the Republican Party or as an independent voice. Perhaps a return to Congress is in your cards. For now, Jimmy Carter remains in the White House, facing the same economic troubles and international challenges that defined this campaign. Your bid didn’t succeed this time, but history may remember it as a bold attempt to redefine the political map - and your party.</p>";
+} else if ((quickstats[0] < 270 && quickstats[1] < 270) && (campaignTrail_temp.player_answers[0] == 2357 || campaignTrail_temp.player_answers[0] == 2358 || campaignTrail_temp.player_answers[0] == 2359 || campaignTrail_temp.player_answers[0] == 2360) && (campaignTrail_temp.player_answers.includes(2421) || campaignTrail_temp.player_answers.includes(2422) || campaignTrail_temp.player_answers.includes(2423) || campaignTrail_temp.player_answers.includes(2424))) {
+  // Anderson NO-MAJORITY
+  let imgg = document.getElementsByClassName("person_image")[0];
+  if (imgg) imgg.src = "https://imgur.com/I4zinOv.png";
+  return "<h3>Wow! No candidate has won a majority.</h3><p>No one has secured the 270 electoral votes needed to win outright - the first such deadlock since 1824. Democrats control more state delegations in the House, but Carter’s political troubles may make some members willing to look at you as a compromise choice. Your socially liberal, fiscally conservative approach appeals to many independents and even some newer Democrats, but many conservative Republicans remain wary of your break from party orthodoxy. Winning will require building an unprecedented bipartisan coalition in the House vote.</p><p>If you take office, you’ll enter as one of the most unconventional Republican presidents in modern times. The economy is struggling with inflation and slow growth, and the Iran Hostage Crisis still dominates the headlines. Your success will depend on whether you can turn bipartisan appeal into real governing strength. If you lose, Jimmy Carter will remain president, and the GOP will only retreat further toward its conservative wing. Good luck, Congressman Anderson.</p>";
 } else {
   return false;
 }
