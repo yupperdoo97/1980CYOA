@@ -1937,10 +1937,17 @@ ul li[id^="issue_"] {
   margin: 0 auto -1.0em auto;           /* centers container with bottom spacing */
 }
 
+/* --- Results Section: h3 Styling --- */
+#results_container h3 {        /* h3 inside results container */
+  margin: 0;                  /* no outer spacing */
+  padding-top: .5em;           /* space above text */
+  font-size: 100%;             /* base text size */
+}
+
 /* Section title */
 #results_container h3.title_h3 {
   font-family: "Courier New", monospace !important; /* monospace font */
-  font-size: 1.28em !important;        /* larger than normal text */
+  font-size: 1.25em !important;        /* larger than normal text */
   font-weight: 700 !important;         /* bold text */
   color: #00c2c2 !important;           /* teal color */
   letter-spacing: 0.03em !important;   /* slight spacing adjustment */
