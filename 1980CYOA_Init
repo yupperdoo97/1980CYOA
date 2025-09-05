@@ -148,7 +148,6 @@ window.updateUI = updateUI;
 
 function setupMusicPlayer() {
     playlist = new Playlist();
-
 const song1 = new Song(
 "The River",
 "Bruce Springsteen",
@@ -631,7 +630,7 @@ style.innerHTML = `
   word-spacing: 0.1em !important;         /* slightly more space between words */
 }
 
-/* === [QUOTE TEXT UNDER RED HEADER – RESPONSIVE POSITION] === */
+/* === [QUOTE TEXT UNDER RED HEADER] === */
 #wittyquote {
   font-family: "Brush Script MT", cursive, sans-serif !important; /* script font */
   font-size: 1.75em !important;           /* moderately large size */
@@ -647,7 +646,7 @@ style.innerHTML = `
   margin-top: -0.25em !important;         /* moves quote slightly upward */
 }
 
-/* === [BLOG + MODMAKER BUTTON STYLING – STACKED RIGHT, NARROWER WIDTH] === */
+/* === [BLOG + MODMAKER BUTTON STYLING] === */
 span[style*="right:10px;top:10px;"] {
   display: flex !important;               /* enables flex layout */
   flex-direction: column !important;      /* stacks buttons vertically */
@@ -1383,7 +1382,7 @@ form[name="running mate"] select:focus {
   font-style: italic !important; /* Italic */
 }
 
-/* === [1980s Redux Mod Styling – Candidate/Running Mate Buttons] === */
+/* === [Candidate/Running Mate Buttons] === */
 .person_button {
   font-family: "Arial Black", Gadget, sans-serif !important;  /* sets bold, blocky font for buttons */
   font-size: 1.05em !important;                               /* slightly increases text size */
@@ -1398,7 +1397,7 @@ form[name="running mate"] select:focus {
   transition: all 0.3s ease-in-out !important;                /* smooth transition for hover effects */
 }
 
-/* Back Button – Candidate & Running Mate */
+/* Back Button - Candidate & Running Mate */
 #candidate_id_back,
 #running_mate_id_back {
   background-color: #000 !important;         /* black background */
@@ -1406,7 +1405,7 @@ form[name="running mate"] select:focus {
   border: 0.156em solid #ff00ff !important;  /* magenta border */
 }
 
-/* Continue Button – Candidate & Running Mate */
+/* Continue Button - Candidate & Running Mate */
 #candidate_id_button,
 #running_mate_id_button {
   background-color: #000 !important;         /* black background */
@@ -1414,7 +1413,7 @@ form[name="running mate"] select:focus {
   border: 0.156em solid #00ff00 !important;  /* green border */
 }
 
-/* Hover Effects – Shared */
+/* Hover Effects */
 .person_button:hover {
   background-color: #330033 !important;      /* dark purple background on hover */
   color: #ffff00 !important;                 /* neon yellow text on hover */
@@ -1422,7 +1421,7 @@ form[name="running mate"] select:focus {
   text-shadow: 0 0 12px #ffff00 !important;  /* stronger glow effect on hover */
 }
 
-/* === [1980s Redux Mod Styling – Game Mode Heading] === */
+/* === [Game Mode Heading] === */
 #game_options h3 {
   font-family: "Arial Black", Gadget, sans-serif !important;  /* bold, blocky heading font */
   font-size: 1.3em !important;                                 /* larger heading text */
@@ -1448,7 +1447,7 @@ form[name="running mate"] select:focus {
   box-sizing: border-box !important;                           /* includes padding/border in total height */
 }
 
-/* === [1980s Redux Mod Styling – Opponent Selection Description] === */
+/* === [Opponent Selection Description] === */
 #opponent_selection_description_window {
   font-family: "Arial", sans-serif !important;                /* standard sans-serif font */
   font-size: 1.1em !important;                                 /* slightly larger text */
@@ -1465,7 +1464,7 @@ form[name="running mate"] select:focus {
   font-weight: normal !important;                               /* normal font weight */
 }
 
-/* === [1980s Redux Mod Styling – Difficulty Level Heading] === */
+/* === [Difficulty Level Heading] === */
 #difficulty_level h3 {
   font-family: "Arial Black", Gadget, sans-serif !important;  /* bold, blocky font */
   font-size: 1.3em !important;                                 /* slightly large text */
@@ -1493,7 +1492,7 @@ form[name="running mate"] select:focus {
   text-shadow: 0 0 0.25em #00ff00 !important;                  /* subtle text glow */
 }
 
-/* === [1980s Redux Mod Styling – Final Results Box] === */
+/* === [Final Results Box] === */
 #main_content_area {
   background-color: black;                                      /* black background */
   color: white;                                                 /* white text */
@@ -1533,7 +1532,7 @@ form[name="running mate"] select:focus {
   border-color: var(--border-color);                            /* uses CSS variable for border color */
 }
 
-/* === Overall Main Results Table - 1980s Style (Further Condensed) === */
+/* === Overall Main Results Table === */
 
 /* Container styling for Overall Vote Statistics */
 #overall_vote_statistics {
@@ -1606,7 +1605,7 @@ form[name="running mate"] select:focus {
   height: 1.375em !important;                                     /* sets row height */
 }
 
-/* === [1980s Redux Mod Styling – Difficulty Multiplier Text] === */
+/* === [Difficulty Multiplier Text] === */
 #difficulty_mult {
   font-family: "Arial Black", Gadget, sans-serif !important; /* Sets bold sans-serif typeface */
   font-size: 1.1em !important;                                /* Slightly larger than normal text */
@@ -1621,7 +1620,7 @@ form[name="running mate"] select:focus {
   font-weight: bold !important;                               /* Ensures bold text inside element */
 }
 
-/* === [Endgame Electoral Vote Summary Box - 1980s Style] === */
+/* === [Endgame Electoral Vote Summary Box] === */
 #overall_result_container {
   display: flex;                                              /* Enable flex layout */
   justify-content: center;                                    /* Center child horizontally */
@@ -1697,7 +1696,7 @@ form[name="running mate"] select:focus {
   max-width: 43.75em !important;                                /* Cap max width */
 }
 
-/* === [Endgame State Result Box - 1980s Style] === */
+/* === [Endgame State Result Box] === */
 #menu_container {
   position: relative !important;                               /* Relative positioning for children */
   width: 12.5% !important;                                     /* Width relative to container */
@@ -1922,7 +1921,7 @@ ul li[id^="issue_"] {
   display: list-item !important;       /* ensures it appears as a standard list item */
 }
 
-/* === Results by State - 1980s Style with Tweaks === */
+/* === Results by State === */
 #results_container {
   background-color: #222;              /* dark background for contrast */
   border-radius: 0.5em;                /* rounded corners */
@@ -2070,7 +2069,7 @@ ul li[id^="issue_"] {
   box-shadow: 0 0 0.25em #d400d4 !important; /* glowing border effect */
 }
 
-/* === Overall Election Details - Refined 1980s Style === */
+/* === Overall Election Details === */
 /* Container styling */
 #overall_details_container {
   background: linear-gradient(135deg, #111 0%, #222 100%); /* Gradient background from dark gray to darker gray */
@@ -2297,7 +2296,7 @@ a[href="null"] {
   box-shadow: 0 0 0.75em #00ffff !important; /* Cyan glow stronger on hover */
 }
 
-/* Retro 1980s style for theme picker dropdown */
+/* Theme picker dropdown */
 #theme_picker {
   display: flex;                              /* Flex container */
   justify-content: flex-end;                  /* Align to right */
