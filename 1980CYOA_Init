@@ -1319,21 +1319,20 @@ form[name="running mate"] select:focus {
 
 /* Text styling */
 #running_mate_summary {
-  position: relative !important; /* Layering context */
-  z-index: 2 !important; /* Above background */
-  background: transparent !important; /* No background */
-  font-family: "Arial", sans-serif !important; /* Clean font */
-  font-size: 1.1em !important; /* Slightly larger */
-  color: #4b7873 !important; /* Teal shade text */
-  line-height: 1.4em !important; /* Line spacing */
-  padding: 1em !important; /* Inner padding */
-  max-height: 100% !important; /* No overflow height */
-  overflow-y: auto !important; /* Scroll if long */
-  padding-right: 0.625em !important; /* Right padding */
-  box-shadow: none !important; /* No shadows */
-  border-radius: 0 !important; /* No corners */
-  scrollbar-width: thin !important; /* Thin scrollbar */
-  scrollbar-color: #33ccaa #0b1a26 !important; /* Custom scrollbar */
+  position: relative !important;      /* Create positioning context for layering */
+  z-index: 2 !important;              /* Keep above background layers */
+  background: transparent !important; /* No background fill */
+  font-family: "Arial", sans-serif !important; /* Clean, simple font */
+  font-size: 1.1em !important;        /* Slightly larger for readability */
+  color: #4b7873 !important;          /* Teal shade text */
+  line-height: 1.4em !important;      /* Comfortable line spacing */
+  padding: 1em 1em 1em 1em !important;/* Uniform inner padding on all sides */
+  max-height: 32vh !important;        /* Limit box height to 32% of viewport */
+  overflow-y: auto !important;        /* Enable vertical scrolling if overflow */
+  box-shadow: none !important;        /* Remove drop shadows */
+  border-radius: 0 !important;        /* No rounded corners */
+  scrollbar-width: thin !important;   /* Thin scrollbar (Firefox) */
+  scrollbar-color: #33ccaa #0b1a26 !important; /* Custom scrollbar colors (Firefox) */
 }
 
 /* Optional: Running Mate Image Styling */
